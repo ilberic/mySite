@@ -1,0 +1,69 @@
+.about
+    position: relative
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: absolute
+        top: 200px
+        left: 50%
+        transform: translateX(-50%)
+        width: 80%
+        animation-delay: 3s
+        animation-duration: 2s
+        animation-iteration-count: 1
+        animation-fill-mode: forwards
+        opacity: 0      
+        &-item
+            display: flex
+            flex-direction: column
+            width: 30%
+            justify-content: space-between
+            align-items: center
+            &_descr
+                margin-top: 10px
+                font-size: 30px
+                line-height: 35px
+                font-weight: 700
+                text-align: center
+
+    &__link
+        font-size: 70px
+        font-weight: 400
+        position: absolute
+        opacity: 1
+        transition: 0.7s all
+        bottom: 0
+        top: 550px
+        left: 50%
+        transform: translateX(-50%)
+        a
+            color: #000
+            display: flex
+            flex-direction: column
+            &:hover
+                text-decoration: none
+        img
+            transition: 1s all
+        &:hover
+            img
+                transform: translateY(20px)     
+.cofee
+    position: absolute
+    bottom: -200px
+    right: -40px
+    transform: rotate(-20deg)
+    font-size: 20px
+    
+@keyframes wrapper_hideup
+    0%
+        opacity: 0
+    100%
+        top: 200px
+        opacity: 1
+@keyframes wrapper_hideup2
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+    

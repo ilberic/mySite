@@ -1,0 +1,40 @@
+.skills
+    position: relative
+    &__wrapper
+        display: flex
+        flex-direction: column
+        position: absolute
+        top: 205px
+        left: 50%
+        transform: translateX(-50%)
+        animation-delay: 3s
+        animation-duration: 2s
+        animation-iteration-count: 1
+        animation-fill-mode: forwards
+        width: 100%
+        opacity: 0   
+        &-item
+            display: flex
+            flex-direction: column
+            width: 100%
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 40px
+            &_descr
+                margin-top: 30px
+                font-size: 32px
+                letter-spacing: 1px
+                line-height: 30px
+                font-weight: 700
+                text-align: center
+    &__link
+        position: absolute
+        transition: 0.7s all
+        top: 650px
+        left: 50%
+        transform: translateX(-50%)
+        img
+            transition: 1s all
+        &:hover
+            img
+                transform: translateY(20px)    

@@ -1,0 +1,46 @@
+.contacts
+    position: relative
+    &__wrapper
+        display: flex
+        flex-direction: column
+        position: absolute
+        top: 125px
+        left: 50%
+        transform: translateX(-50%)
+        animation-delay: 3s
+        animation-duration: 2s
+        animation-iteration-count: 1
+        animation-fill-mode: forwards
+        opacity: 0
+        text-align: center
+        &-item
+            margin-bottom: 40px
+            &_title
+                font-size: 30px
+                font-weight: 700
+            &_subtitle
+                font-size: 30px
+                a
+                    text-decoration: none
+                    color: black
+
+            form
+                input
+                    margin-bottom: 10px
+                    border-radius: 41px
+                    border: 1px solid #000000
+                    padding: 10px 0 10px 33px
+                    opacity: 0.4
+                    font-size: 35px
+                button
+                    width: 120px
+                    height: 30px
+                    border-radius: 15px
+                    border: none
+                    background-color: rgba(255, 168, 0, 0.72)
+                    transition: 1s all
+                    margin-top: 20px
+                    &:hover
+                        background-color: rgba(165, 118, 23, 0.72)
+
+        

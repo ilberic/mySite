@@ -1,0 +1,43 @@
+.why
+    position: relative
+    &__link
+        position: absolute
+        transition: 0.7s all
+        bottom: 0
+        top: 650px
+        left: 50%
+        transform: translateX(-50%)
+        img
+            transition: 1s all
+        &:hover
+            img
+                transform: translateY(20px)    
+    &__wrapper
+        display: flex
+        flex-direction: column
+        position: absolute
+        top: 125px
+        left: 50%
+        transform: translateX(-50%)
+        animation-delay: 3s
+        animation-duration: 2s
+        animation-iteration-count: 1
+        animation-fill-mode: forwards
+        opacity: 0      
+        &-item
+            display: flex
+            flex-direction: column
+            width: 100%
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 20px
+            &_descr
+                margin-top: 10px
+                font-size: 32px
+                letter-spacing: 1px
+                line-height: 30px
+                font-weight: 400
+                text-align: center
+                span
+                    font-weight: 700
+
